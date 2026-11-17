@@ -1,8 +1,10 @@
-# Html Agility Pack for .NET 11
+# Async Html Agility Pack
 
 Html Agility Pack (HAP) is an HTML parser that builds a read/write DOM and supports plain XPath or XSLT. It tolerates "real world" malformed HTML, and its object model is very similar to `System.Xml`, but for HTML documents and streams.
 
-This repository is a completely modernized fork that targets **.NET 11 only**. It removes the messy conditional compilation needed to support many legacy frameworks, folds HTML downloading into `HtmlDocument`, and moves all I/O to async/await.
+This repository is an async-first, modernized fork that targets **.NET 11 and later only**. It removes the messy conditional compilation needed to support many legacy frameworks, folds HTML downloading into `HtmlDocument`, and moves all I/O to `async/await`.
+
+A demo console project is included to illustrate basic usage.
 
 ## Credits
 
@@ -11,6 +13,14 @@ Html Agility Pack was originally created by Simon Mourier and is maintained by Z
 ## Requirements
 
 - .NET 11 SDK
+
+## Installation
+
+```bash
+dotnet add package Async.HtmlAgilityPack
+```
+
+The package ID is different from upstream's `HtmlAgilityPack`, but the namespace (`HtmlAgilityPack`) and assembly name are the same, so don't reference both packages in one project.
 
 ## Building and testing
 
@@ -87,6 +97,18 @@ await doc.LoadAsync("page.html", Encoding.UTF8);
 
 await doc.SaveAsync("page-out.html");
 ```
+
+## Documentation
+
+The full documentation is in [`docs/index.html`](docs/index.html). It's a single self-contained HTML page that works offline, with:
+
+- a guide to loading, querying, changing and saving documents
+- a table of parser options
+- mapping HTML to objects with the XPath attributes
+- a migration guide from 1.x, plus known issues
+- an API reference for every public type and member, generated from the XML doc comments
+
+GitHub shows `.html` files as source, so clone the repo and open `docs/index.html` in a browser.
 
 ## What changed in this version
 

@@ -1,4 +1,4 @@
-// A small tour of Html Agility Pack for .NET 11.
+// A small tour of Async Html Agility Pack.
 //
 // By default it downloads the first web page of the World Wide Web project at CERN
 // (last modified in December 1992), which is ideal for a demo: it never changes, and its

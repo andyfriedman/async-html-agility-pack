@@ -9,7 +9,7 @@
     <LangVersion>latest</LangVersion>
     <NuGetAudit>false</NuGetAudit>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <PackageId>HtmlAgilityPack</PackageId>
+    <PackageId>Async.HtmlAgilityPack</PackageId>
     <Version>2.0.0</Version>
     <Authors>ZZZ Projects Inc., Andy Friedman</Authors>
     <Company>ZZZ Projects Inc.</Company>
@@ -19,5 +19,23 @@
     <AssemblyOriginatorKeyFile>HtmlAgilityPack.snk</AssemblyOriginatorKeyFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <!-- NuGet package metadata -->
+  <PropertyGroup>
+    <Title>Async Html Agility Pack</Title>
+    <Description>An async-first fork of Html Agility Pack: an HTML parser that builds a read/write DOM and supports XPath and XSLT, tolerating real-world malformed HTML. Built for server workloads: no blocking I/O, CancellationToken support throughout, and bring-your-own HttpClient for use with IHttpClientFactory. The API has nullable annotations. Not affiliated with ZZZ Projects.</Description>
+    <PackageTags>html;parser;xpath;dom;async;scraping;webscraping;server;aspnetcore;htmlagilitypack</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/andyfriedman/async-html-agility-pack</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/andyfriedman/async-html-agility-pack.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="PACKAGE.md" Pack="true" PackagePath="README.md" />
+  </ItemGroup>
 
 </Project>
