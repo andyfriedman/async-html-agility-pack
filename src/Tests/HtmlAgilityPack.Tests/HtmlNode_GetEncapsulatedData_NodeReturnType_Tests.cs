@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HtmlAgilityPack.Attributes;
+using HtmlAgilityPack.Exceptions;
+using System;
 using System.Collections.Generic;
 using Xunit;
 

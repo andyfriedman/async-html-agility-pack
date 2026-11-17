@@ -3,6 +3,7 @@
 // Copyright © ZZZ Projects Inc. All rights reserved.
 // Copyright © 2026 Andy Friedman. Applies to the .NET 11 modernization changes.
 
+using HtmlAgilityPack.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.IO;
