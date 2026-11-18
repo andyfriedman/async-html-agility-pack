@@ -2,7 +2,7 @@ using System.Text;
 using System.Xml.XPath;
 using Xunit;
 
-namespace HtmlAgilityPack.Tests;
+namespace Async.HtmlAgilityPack.Tests;
 
 public sealed class HtmlNodeNavigatorTests : IDisposable
 {

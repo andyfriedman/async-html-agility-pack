@@ -3,7 +3,7 @@
 // Copyright © ZZZ Projects Inc. All rights reserved.
 // Copyright © 2026 Andy Friedman. Applies to the .NET 11 modernization changes.
 
-namespace HtmlAgilityPack.Exceptions;
+namespace Async.HtmlAgilityPack.Exceptions;
 
 /// <summary>
 /// Exception that occurs when an XPathAttribute annotation has an invalid ReturnType specified.

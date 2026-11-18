@@ -1,8 +1,8 @@
 using System.Xml.XPath;
-using HtmlAgilityPack.Attributes;
+using Async.HtmlAgilityPack.Attributes;
 using Xunit;
 
-namespace HtmlAgilityPack.Tests;
+namespace Async.HtmlAgilityPack.Tests;
 
 /// <summary>
 /// One or more tests for each public <see cref="HtmlNode"/> method that is not exercised elsewhere.

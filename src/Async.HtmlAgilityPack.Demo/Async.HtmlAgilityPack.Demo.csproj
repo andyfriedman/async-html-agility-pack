@@ -3,6 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net11.0</TargetFramework>
+    <AssemblyName>Async.HtmlAgilityPack.Demo</AssemblyName>
+    <RootNamespace>Async.HtmlAgilityPack.Demo</RootNamespace>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
@@ -11,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HtmlAgilityPack\HtmlAgilityPack.csproj" />
+    <ProjectReference Include="..\Async.HtmlAgilityPack\Async.HtmlAgilityPack.csproj" />
   </ItemGroup>
 
 </Project>

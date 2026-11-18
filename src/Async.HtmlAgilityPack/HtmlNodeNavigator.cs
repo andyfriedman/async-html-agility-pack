@@ -13,7 +13,7 @@ using System.Xml.XPath;
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace HtmlAgilityPack
+namespace Async.HtmlAgilityPack
 {
 	/// <summary>
 	/// Represents an HTML navigator on an HTML document seen as a data store.

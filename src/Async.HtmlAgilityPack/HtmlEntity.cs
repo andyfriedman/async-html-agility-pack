@@ -10,7 +10,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Text;
 
-namespace HtmlAgilityPack
+namespace Async.HtmlAgilityPack
 {
     /// <summary>
     /// A utility class to replace special characters by entities and vice-versa.

@@ -3,7 +3,7 @@
 // Copyright © ZZZ Projects Inc. All rights reserved.
 // Copyright © 2026 Andy Friedman. Applies to the .NET 11 modernization changes.
 
-namespace HtmlAgilityPack.Exceptions;
+namespace Async.HtmlAgilityPack.Exceptions;
 
 /// <summary>
 /// Exception that often occures when there is no way to bind a XPath to a HtmlTag Attribute.

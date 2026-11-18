@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace HtmlAgilityPack.Tests;
+namespace Async.HtmlAgilityPack.Tests;
 
 public class HtmlNodeTests
 {

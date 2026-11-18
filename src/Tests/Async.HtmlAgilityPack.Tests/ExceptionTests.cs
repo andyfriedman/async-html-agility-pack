@@ -1,7 +1,7 @@
-using HtmlAgilityPack.Exceptions;
+using Async.HtmlAgilityPack.Exceptions;
 using Xunit;
 
-namespace HtmlAgilityPack.Tests;
+namespace Async.HtmlAgilityPack.Tests;
 
 public class ExceptionTests
 {

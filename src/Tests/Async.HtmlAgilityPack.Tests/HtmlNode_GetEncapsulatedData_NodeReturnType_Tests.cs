@@ -1,10 +1,10 @@
-﻿using HtmlAgilityPack.Attributes;
-using HtmlAgilityPack.Exceptions;
+﻿using Async.HtmlAgilityPack.Attributes;
+using Async.HtmlAgilityPack.Exceptions;
 using System;
 using System.Collections.Generic;
 using Xunit;
 
-namespace HtmlAgilityPack.Tests
+namespace Async.HtmlAgilityPack.Tests
 {
     public class HtmlNode_GetEncapsulatedData_NodeReturnType_Tests
     {

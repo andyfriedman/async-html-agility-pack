@@ -5,16 +5,16 @@
 // early markup (<HEADER> instead of <HEAD>, unquoted attributes, no closing <P>/<DT>/<DD>
 // tags) shows how forgiving the parser is.
 //
-// Usage: dotnet run --project HtmlAgilityPack.Demo [url]
+// Usage: dotnet run --project Async.HtmlAgilityPack.Demo [url]
 
 using System.Text.RegularExpressions;
-using HtmlAgilityPack;
+using Async.HtmlAgilityPack;
 
 var url = new Uri(args.Length > 0 ? args[0] : "https://info.cern.ch/hypertext/WWW/TheProject.html");
 
 // 1. Download and parse the page. Pass your own HttpClient to control headers and timeouts.
 using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(15) };
-http.DefaultRequestHeaders.UserAgent.ParseAdd("HtmlAgilityPack.Demo/2.0");
+http.DefaultRequestHeaders.UserAgent.ParseAdd("Async.HtmlAgilityPack.Demo/2.0");
 
 var doc = new HtmlDocument();
 try

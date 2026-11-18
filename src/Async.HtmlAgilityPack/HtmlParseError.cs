@@ -3,7 +3,7 @@
 // Copyright © ZZZ Projects Inc. All rights reserved.
 // Copyright © 2026 Andy Friedman. Applies to the .NET 11 modernization changes.
 
-namespace HtmlAgilityPack;
+namespace Async.HtmlAgilityPack;
 
 /// <summary>
 /// Represents a parsing error found during document parsing.

@@ -13,7 +13,7 @@ It isn't affiliated with ZZZ Projects, the maintainers of upstream Html Agility 
 ## Getting started
 
 ```csharp
-using HtmlAgilityPack;
+using Async.HtmlAgilityPack;
 
 var doc = new HtmlDocument();
 doc.LoadHtml("<ul><li>Tea<li>Coffee</ul>");
@@ -55,21 +55,22 @@ await doc.SaveAsync("page-out.html", cancellationToken);
 
 ## Migrating from Html Agility Pack 1.x
 
-The namespace (`HtmlAgilityPack`) and the DOM API are the same, so most query and manipulation code works unchanged. The main differences:
+The type names and the DOM API are the same, so most query and manipulation code works unchanged once you update the `using` directives. The main differences:
 
 | 1.x | This package |
 |---|---|
+| `using HtmlAgilityPack;` | `using Async.HtmlAgilityPack;` |
 | `new HtmlWeb().Load(url)` | `await doc.LoadHtmlAsync(new Uri(url))` |
 | `HtmlWeb` settings (user agent, timeout, proxy, cookies) | Configure an `HttpClient` and pass it to `LoadHtmlAsync` |
 | `doc.Load(...)`, `doc.Save(...)` | `await doc.LoadAsync(...)`, `await doc.SaveAsync(...)` |
 | `node.WriteTo(TextWriter)` | `await node.WriteToAsync(TextWriter)` |
 | `HtmlWebException` | `HttpRequestException` |
-| `[XPath]`, `[HasXPath]`, `[SkipNodeNotFound]` | Now in the `HtmlAgilityPack.Attributes` namespace |
-| Mapping exceptions (`NodeNotFoundException`, …) | Now in the `HtmlAgilityPack.Exceptions` namespace |
+| `[XPath]`, `[HasXPath]`, `[SkipNodeNotFound]` | Now in the `Async.HtmlAgilityPack.Attributes` namespace |
+| Mapping exceptions (`NodeNotFoundException`, …) | Now in the `Async.HtmlAgilityPack.Exceptions` namespace |
 
 These were removed with no replacement: `LoadFromBrowser`, the `HtmlWeb` file cache, and `HtmlCmdLine`/`HtmlConsoleListener`.
 
-**Don't reference this package and the upstream `HtmlAgilityPack` package in the same project.** Both contain `HtmlAgilityPack.dll` with the same namespace.
+The package, assembly (`Async.HtmlAgilityPack.dll`) and namespaces (`Async.HtmlAgilityPack`) all have different names from upstream Html Agility Pack, so the two can be used in the same project, for example when another dependency brings in upstream `HtmlAgilityPack`.
 
 ## Documentation
 

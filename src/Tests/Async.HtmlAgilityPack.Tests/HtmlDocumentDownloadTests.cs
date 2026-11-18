@@ -4,7 +4,7 @@ using System.Text;
 using System.Xml;
 using Xunit;
 
-namespace HtmlAgilityPack.Tests;
+namespace Async.HtmlAgilityPack.Tests;
 
 public class HtmlDocumentDownloadTests
 {

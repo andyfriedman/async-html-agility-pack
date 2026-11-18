@@ -5,7 +5,7 @@
 
 using System.Text;
 
-namespace HtmlAgilityPack.Exceptions;
+namespace Async.HtmlAgilityPack.Exceptions;
 
 internal sealed class EncodingFoundException(Encoding? encoding) : Exception
 {

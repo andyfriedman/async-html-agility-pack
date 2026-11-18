@@ -5,7 +5,7 @@
 
 using System.Text;
 
-namespace HtmlAgilityPack;
+namespace Async.HtmlAgilityPack;
 
 public partial class HtmlDocument
 {

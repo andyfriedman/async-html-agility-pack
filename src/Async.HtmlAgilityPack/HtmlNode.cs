@@ -16,7 +16,7 @@ using System.Xml;
 using System.Diagnostics.CodeAnalysis;
 
 // ReSharper disable InconsistentNaming
-namespace HtmlAgilityPack
+namespace Async.HtmlAgilityPack
 {
 	/// <summary>
 	/// Represents an HTML node.

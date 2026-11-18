@@ -5,7 +5,7 @@
 
 using System.Xml.XPath;
 
-namespace HtmlAgilityPack;
+namespace Async.HtmlAgilityPack;
 
 public partial class HtmlDocument : IXPathNavigable
 {

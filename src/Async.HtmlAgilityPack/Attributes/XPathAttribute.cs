@@ -3,7 +3,7 @@
 // Copyright © ZZZ Projects Inc. All rights reserved.
 // Copyright © 2026 Andy Friedman. Applies to the .NET 11 modernization changes.
 
-namespace HtmlAgilityPack.Attributes;
+namespace Async.HtmlAgilityPack.Attributes;
 
 /// <summary>
 /// Includes XPath and <see cref="NodeReturnType"/>. XPath for finding html tags and <see cref="NodeReturnType"/> for specify which part of <see cref="HtmlNode"/> you want to return.

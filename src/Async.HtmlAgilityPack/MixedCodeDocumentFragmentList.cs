@@ -5,7 +5,7 @@
 
 using System.Collections;
 
-namespace HtmlAgilityPack;
+namespace Async.HtmlAgilityPack;
 
 /// <summary>
 /// Represents a list of mixed code fragments.

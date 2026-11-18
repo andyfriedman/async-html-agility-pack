@@ -9,7 +9,7 @@ using System.Threading;
 using Xunit;
 using System.Xml.Linq;
 
-namespace HtmlAgilityPack.Tests
+namespace Async.HtmlAgilityPack.Tests
 {
 
     public class AttributeValueQuoteTests

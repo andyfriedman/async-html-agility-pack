@@ -1,8 +1,8 @@
-using HtmlAgilityPack.Attributes;
+using Async.HtmlAgilityPack.Attributes;
 using System.Diagnostics;
 using Xunit;
 
-namespace HtmlAgilityPack.Tests;
+namespace Async.HtmlAgilityPack.Tests;
 
 public class EncapsulatorTests
 {

@@ -5,7 +5,7 @@
 
 using System.ComponentModel;
 
-namespace HtmlAgilityPack;
+namespace Async.HtmlAgilityPack;
 
 internal static class Utilities
 {

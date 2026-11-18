@@ -5,7 +5,7 @@
 
 using System.Xml;
 
-namespace HtmlAgilityPack;
+namespace Async.HtmlAgilityPack;
 
 internal sealed class HtmlNameTable : XmlNameTable
 {

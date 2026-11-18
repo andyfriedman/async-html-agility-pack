@@ -1,9 +1,9 @@
-﻿using HtmlAgilityPack.Attributes;
+﻿using Async.HtmlAgilityPack.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace HtmlAgilityPack.Tests
+namespace Async.HtmlAgilityPack.Tests
 {
     [HasXPath]
     [DebuggerDisplay("{Title}")]

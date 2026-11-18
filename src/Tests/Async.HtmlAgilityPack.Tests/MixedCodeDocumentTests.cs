@@ -1,7 +1,7 @@
 using System.Text;
 using Xunit;
 
-namespace HtmlAgilityPack.Tests;
+namespace Async.HtmlAgilityPack.Tests;
 
 public sealed class MixedCodeDocumentTests : IDisposable
 {

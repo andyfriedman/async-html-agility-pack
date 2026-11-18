@@ -20,23 +20,23 @@ Html Agility Pack was originally created by Simon Mourier and is maintained by Z
 dotnet add package Async.HtmlAgilityPack
 ```
 
-The package ID is different from upstream's `HtmlAgilityPack`, but the namespace (`HtmlAgilityPack`) and assembly name are the same, so don't reference both packages in one project.
+The package, assembly (`Async.HtmlAgilityPack.dll`) and namespaces (`Async.HtmlAgilityPack`) all have different names from upstream Html Agility Pack, so the two can be used in the same project, for example when another dependency brings in upstream `HtmlAgilityPack`.
 
 ## Building and testing
 
 ```bash
 cd src
-dotnet build HtmlAgilityPack.sln
-dotnet test HtmlAgilityPack.sln
+dotnet build Async.HtmlAgilityPack.sln
+dotnet test Async.HtmlAgilityPack.sln
 ```
 
 The solution has three projects:
 
 | Project | Path |
 |---|---|
-| Library | `src/HtmlAgilityPack/HtmlAgilityPack.csproj` |
-| Tests (xUnit) | `src/Tests/HtmlAgilityPack.Tests/HtmlAgilityPack.Tests.csproj` |
-| Demo console app | `src/HtmlAgilityPack.Demo/HtmlAgilityPack.Demo.csproj` |
+| Library | `src/Async.HtmlAgilityPack/Async.HtmlAgilityPack.csproj` |
+| Tests (xUnit) | `src/Tests/Async.HtmlAgilityPack.Tests/Async.HtmlAgilityPack.Tests.csproj` |
+| Demo console app | `src/Async.HtmlAgilityPack.Demo/Async.HtmlAgilityPack.Demo.csproj` |
 
 ## Demo
 
@@ -44,7 +44,7 @@ The demo app downloads the first page of the World Wide Web project at CERN, whi
 
 ```bash
 cd src
-dotnet run --project HtmlAgilityPack.Demo
+dotnet run --project Async.HtmlAgilityPack.Demo
 ```
 
 It shows:
@@ -57,7 +57,7 @@ It shows:
 - reading `href` attributes and resolving them to absolute URLs
 - rewriting the links in the DOM and saving a copy with `SaveAsync`
 
-Pass a different URL to try it on another page: `dotnet run --project HtmlAgilityPack.Demo -- https://example.com/`.
+Pass a different URL to try it on another page: `dotnet run --project Async.HtmlAgilityPack.Demo -- https://example.com/`.
 
 ## Quick start
 
@@ -115,9 +115,9 @@ GitHub shows `.html` files as source, so clone the repo and open `docs/index.htm
 ### Platform and project structure
 
 - Targets **.NET 11 only**. The 13 legacy projects are gone: .NET Framework 2.0–4.5, .NET Standard 1.3/1.6/2.0, .NET 8, NetCore45, UAP10 and the Windows Phone 8/8.1 portable libraries.
-- The shared project (`HtmlAgilityPack.Shared`) and the per-framework projects are merged into one SDK-style project, `src/HtmlAgilityPack`.
+- The shared project (`HtmlAgilityPack.Shared`) and the per-framework projects are merged into one SDK-style project, `src/Async.HtmlAgilityPack`.
 - About 425 framework-specific `#if` blocks are removed, along with the platform polyfills (`Trace`, `IOLibrary`, `InvalidProgramException`, the Metro-specific code).
-- One solution, `src/HtmlAgilityPack.sln`, with the library and one test project.
+- One solution, `src/Async.HtmlAgilityPack.sln`, with the library and one test project.
 
 ### Downloading HTML
 
@@ -145,7 +145,7 @@ GitHub shows `.html` files as source, so clone the repo and open `docs/index.htm
 
 ### Tests
 
-- The two old test projects (NUnit on .NET Framework 4.5, and xUnit on .NET Standard 2.0) are merged into one xUnit project, `src/Tests/HtmlAgilityPack.Tests`.
+- The two old test projects (NUnit on .NET Framework 4.5, and xUnit on .NET Standard 2.0) are merged into one xUnit project, `src/Tests/Async.HtmlAgilityPack.Tests`.
 - Every original test with real assertions was kept, and the NUnit tests were converted to xUnit. Two placeholders were dropped: an empty MSTest `TestMethod1`, and `TestLoadWithUri`, whose body was commented out. Tests that use the now-async APIs are async and have the `Async` suffix.
 - New tests cover the download API, async load/save, `MixedCodeDocument`, `HtmlNodeNavigator.CreateAsync` and `XmlWriter` output. HTTP is stubbed with a fake `HttpMessageHandler`, so no test needs network access.
 - 142 tests, all passing.
@@ -153,6 +153,18 @@ GitHub shows `.html` files as source, so clone the repo and open `docs/index.htm
 ## Breaking changes
 
 This version isn't a drop-in replacement for upstream Html Agility Pack 1.x.
+
+### Renamed: namespaces and assembly
+
+| Before | Now |
+|---|---|
+| Package `HtmlAgilityPack` | `Async.HtmlAgilityPack` |
+| Assembly `HtmlAgilityPack.dll` | `Async.HtmlAgilityPack.dll`, signed with a new strong-name key |
+| `using HtmlAgilityPack;` | `using Async.HtmlAgilityPack;` |
+| `[XPath]`, `[HasXPath]`, `[SkipNodeNotFound]` in `HtmlAgilityPack` | `Async.HtmlAgilityPack.Attributes` |
+| `NodeNotFoundException` and the other mapping exceptions in `HtmlAgilityPack` | `Async.HtmlAgilityPack.Exceptions` |
+
+The type names are unchanged.
 
 ### Removed: `HtmlWeb` and `HtmlWebException`
 

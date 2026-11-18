@@ -4,15 +4,15 @@
 // Copyright © 2026 Andy Friedman. Applies to the .NET 11 modernization changes.
 
 
-using HtmlAgilityPack.Attributes;
-using HtmlAgilityPack.Exceptions;
+using Async.HtmlAgilityPack.Attributes;
+using Async.HtmlAgilityPack.Exceptions;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Xml.XPath;
 
-namespace HtmlAgilityPack
+namespace Async.HtmlAgilityPack
 {
     public partial class HtmlNode
     {

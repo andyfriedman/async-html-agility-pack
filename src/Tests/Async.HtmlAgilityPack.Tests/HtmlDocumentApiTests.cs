@@ -3,7 +3,7 @@ using System.Net.Sockets;
 using System.Text;
 using Xunit;
 
-namespace HtmlAgilityPack.Tests;
+namespace Async.HtmlAgilityPack.Tests;
 
 /// <summary>
 /// One or more tests for each public <see cref="HtmlDocument"/> method that is not exercised elsewhere.

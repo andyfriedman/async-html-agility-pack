@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net11.0</TargetFramework>
-    <AssemblyName>HtmlAgilityPack</AssemblyName>
-    <RootNamespace>HtmlAgilityPack</RootNamespace>
+    <AssemblyName>Async.HtmlAgilityPack</AssemblyName>
+    <RootNamespace>Async.HtmlAgilityPack</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
@@ -16,7 +16,7 @@
     <Product>Html Agility Pack</Product>
     <Copyright>Copyright © ZZZ Projects Inc., Andy Friedman</Copyright>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>HtmlAgilityPack.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Async.HtmlAgilityPack.snk</AssemblyOriginatorKeyFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 

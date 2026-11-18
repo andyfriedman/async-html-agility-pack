@@ -5,7 +5,7 @@
 
 using System.Diagnostics;
 
-namespace HtmlAgilityPack;
+namespace Async.HtmlAgilityPack;
 
 /// <summary>
 /// Represents an HTML attribute.

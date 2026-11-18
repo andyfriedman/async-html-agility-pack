@@ -3,12 +3,12 @@
 // Copyright © ZZZ Projects Inc. All rights reserved.
 // Copyright © 2026 Andy Friedman. Applies to the .NET 11 modernization changes.
 
-using HtmlAgilityPack.Attributes;
-using HtmlAgilityPack.Exceptions;
+using Async.HtmlAgilityPack.Attributes;
+using Async.HtmlAgilityPack.Exceptions;
 using System.Collections;
 using System.Reflection;
 
-namespace HtmlAgilityPack;
+namespace Async.HtmlAgilityPack;
 
 /// <summary>
 /// Includes tools that GetEncapsulatedData method uses them.

@@ -3,7 +3,7 @@
 // Copyright © ZZZ Projects Inc. All rights reserved.
 // Copyright © 2026 Andy Friedman. Applies to the .NET 11 modernization changes.
 
-namespace HtmlAgilityPack.Attributes;
+namespace Async.HtmlAgilityPack.Attributes;
 
 /// <summary>
 /// Tagging a property with this Attribute make Encapsulator to ignore that property if it causes an error.

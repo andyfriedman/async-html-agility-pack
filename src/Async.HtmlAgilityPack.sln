@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlAgilityPack", "HtmlAgilityPack\HtmlAgilityPack.csproj", "{E60CA84F-455B-A572-AF03-C1BD41F6A0E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.HtmlAgilityPack", "Async.HtmlAgilityPack\Async.HtmlAgilityPack.csproj", "{E60CA84F-455B-A572-AF03-C1BD41F6A0E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlAgilityPack.Tests", "Tests\HtmlAgilityPack.Tests\HtmlAgilityPack.Tests.csproj", "{E16AB2BB-BB8E-4AC5-B3D2-FB0A21F9288F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.HtmlAgilityPack.Tests", "Tests\Async.HtmlAgilityPack.Tests\Async.HtmlAgilityPack.Tests.csproj", "{E16AB2BB-BB8E-4AC5-B3D2-FB0A21F9288F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlAgilityPack.Demo", "HtmlAgilityPack.Demo\HtmlAgilityPack.Demo.csproj", "{B418BE39-EB36-4922-B585-F1EB19A5AD21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.HtmlAgilityPack.Demo", "Async.HtmlAgilityPack.Demo\Async.HtmlAgilityPack.Demo.csproj", "{B418BE39-EB36-4922-B585-F1EB19A5AD21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

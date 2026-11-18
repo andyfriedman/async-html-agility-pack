@@ -8,7 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace HtmlAgilityPack
+namespace Async.HtmlAgilityPack
 {
     /// <summary>
     /// Represents a combined list and collection of HTML nodes.
