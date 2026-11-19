@@ -235,7 +235,7 @@ namespace Async.HtmlAgilityPack
 
             node._prevnode = prev;
             if (next == node)
-                throw new InvalidProgramException("Unexpected error.");
+                throw new InvalidOperationException("Unexpected error.");
 
             node._nextnode = next; 
 			node.SetParent(_parentnode);
@@ -278,7 +278,7 @@ namespace Async.HtmlAgilityPack
             if (prev != null)
             {
                 if (next == prev)
-                    throw new InvalidProgramException("Unexpected error.");
+                    throw new InvalidOperationException("Unexpected error.");
                 prev._nextnode = next;
             }
 
@@ -337,7 +337,7 @@ namespace Async.HtmlAgilityPack
 	        node.SetParent(_parentnode);
 			if (last == null) return;
             if (last == node)
-                throw new InvalidProgramException("Unexpected error.");
+                throw new InvalidOperationException("Unexpected error.");
 
             last._nextnode = node;
         }
@@ -380,7 +380,7 @@ namespace Async.HtmlAgilityPack
             _items.Insert(0, node);
 
             if (node == first)
-                throw new InvalidProgramException("Unexpected error.");
+                throw new InvalidOperationException("Unexpected error.");
             node._nextnode = first;
             node._prevnode = null;
 	        node.SetParent(_parentnode);
@@ -423,7 +423,7 @@ namespace Async.HtmlAgilityPack
             if (prev != null)
             {
                 if (node == prev)
-                    throw new InvalidProgramException("Unexpected error.");
+                    throw new InvalidOperationException("Unexpected error.");
                 prev._nextnode = node;
             }
 
@@ -433,7 +433,7 @@ namespace Async.HtmlAgilityPack
             node._prevnode = prev;
 
             if (next == node)
-                throw new InvalidProgramException("Unexpected error.");
+                throw new InvalidOperationException("Unexpected error.");
 
             node._nextnode = next;
 	        node.SetParent(_parentnode);
